@@ -8,7 +8,6 @@ export const TrafficLight = () => {
     function aleatoryColor(){
         let colors =['red','yellow','green'];
         let ramdomColor = Math.floor(Math.random()*colors.length);
-        console.log(colors[ramdomColor]);
         return document.getElementById(colors[ramdomColor]).click();
     }
 
@@ -27,7 +26,7 @@ export const TrafficLight = () => {
                 ></div>
             </div>
             <div className="btn-group mt-3" role="group" aria-label="Basic example">
-                <button type="button" onClick={aleatoryColor()} class="btn btn-primary">Random Light</button>
+                <button type="button" onClick={aleatoryColor} class="btn btn-primary">Random Light</button>
                 <button type="button" onClick={() =>setShowPurple('d-block')} class="btn btn-primary">Appear new Light</button>
             </div>
         </div>
