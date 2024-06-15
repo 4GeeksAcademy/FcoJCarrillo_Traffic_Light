@@ -17,8 +17,9 @@
 .semaforo{
     display: flex;
     position: static;
-    min-width: 15%;
-    width: 15%;
+    min-width: 10%;
+    width: 100%;
+    max-width: 300px;
     flex-direction: column;
     align-items: center;
     border: 12px solid black;
@@ -42,5 +43,10 @@
   @keyframes glow {
     to {
         box-shadow: 0px 0px 30px 20px yellowgreen;
+    }
+  }
+  @media (min-width: 300px) {
+    .semaforo {
+      max-width: 200px;
     }
   }

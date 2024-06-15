@@ -25,7 +25,7 @@ export const TrafficLight = () => {
                     onClick={() => setColor('#purple')}
                 ></div>
             </div>
-            <div className="btn-group mt-3" role="group" aria-label="Basic example">
+            <div className="btn-group mt-3 col-sm-6 col-md-6 col-xl-4" role="group" aria-label="Basic example">
                 <button type="button" onClick={aleatoryColor} className="btn btn-primary">Random Light</button>
                 <button type="button" onClick={() =>setShowPurple('d-block')} className="btn btn-primary">Appear new Light</button>
             </div>
